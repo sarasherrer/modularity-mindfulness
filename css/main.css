@@ -47,15 +47,17 @@ li {
 
 
 section {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 article {
-  justify-items: end;
-  justify-content: flex-end;
-  align-items: stretch;
+  padding: 1rem;
+  max-width: 33%;
+  height: auto;
 }
 
 h1 {
@@ -84,6 +86,7 @@ i {
 
 }
 .banner {
+  display: grid;
   max-width: 30em;
   margin: 1.5rem;
 }
@@ -99,10 +102,6 @@ footer {
 }
 
 @media only screen and (min-width: 38em) {
-
-  section {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 
   h1 {
     text-align: left;
