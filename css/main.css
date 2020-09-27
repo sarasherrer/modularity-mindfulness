@@ -19,7 +19,6 @@ html {
 
 body {
   margin: 0;
-  padding: 1rem;
 }
 
 img {
@@ -27,75 +26,155 @@ img {
   width: 100%;
 }
 
-
 nav {
-  display: flex;
-  text-align: center;
 
 }
 
 ul {
-  display: flex;
+display: flex;
+padding: 0;
+justify-content: space-around;
+margin-top: 0;
+margin-bottom: 1rem;
 
 }
 
 li {
   list-style-type: none;
   text-decoration: none;
-  padding-left: 1rem;
+  font-size: 1.125rem;
+  justify-content: space-between;
 }
+
+a {
+  color: #3783a3;
+
+
+}
+
+
+
 
 
 section {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  grid-auto-rows: minmax(100%. auto);
 }
 
 article {
-  justify-items: end;
-  justify-content: flex-end;
-  align-items: stretch;
+  padding: 1rem;
+  padding-bottom: 0;
 }
 
 h1 {
   text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  margin-top: 1rem;
 }
 
 h2 {
+  font-size: 1.125rem;
   text-align: center;
-  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
 
 p {
-  font-size: 1.125rem;
+  font-size: 1rem;
+
 }
 
-footer {
-  font-size: 1rem;
+article p {
+
 }
 
 header p {
   text-align: center;
 }
 
+h3 {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+
+header {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+
+
 i {
   font-size: 2rem;
+}
+
+.pads {
 
 }
+
 .banner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   max-width: 30em;
-  margin: 1.5rem;
+  border-bottom: .2rem solid #e2e2e2;
+  border-top: .2rem solid #e2e2e2;
+  padding-top: .25rem;
+
+}
+
+.catch {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  margin-bottom: 1.5rem;
+}
+
+article img {
+  margin-bottom: 1.5rem;
+  margin-top: .5rem;
+
+}
+
+.smaller {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+h3 i {
+  font-size: 1.5rem;
 }
 
 footer {
   text-align: center;
+  margin: 1.5rem;
+  border-top: .2rem solid #e2e2e2;
+  padding-top: 1.5rem;
+  font-size: 1rem;
 }
 
 .btn {
+  display: block;
+  text-align: center;
   padding:.5em 1em .6em;
   border-radius: .3em;
-  background-color: red;
+  border: .2rem solid #3783a3;
+}
+.btn a {
+  color: #3783a3;
 }
 
 @media only screen and (min-width: 38em) {
@@ -104,16 +183,15 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+
   h1 {
     text-align: left;
   }
-  h2 {
+  h3 {
     text-align: left;
   }
 
-  nav {
-    justify-content: flex-end;
-  }
+
 
 
 }
